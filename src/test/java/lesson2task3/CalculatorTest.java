@@ -7,19 +7,54 @@ class CalculatorTest {
 
     @Test
     void shouldAddTwoNumber() {
+        // given
+        int number = 4;
+
+        // when
         int result = Calculator.sum(2, 2);
+        Assertions.assertEquals(4, result);
+
+        // then
         Assertions.assertEquals(4, result);
     }
 
     @Test
-    void subtract() {
+    void shouldToSubtractTwoNumbers() {
+        // given
+        int number = 1;
+
+        // when
+        int result = Calculator.subtract(2,1);
+        Assertions.assertEquals(1,result);
+
+        // then
+        Assertions.assertEquals(1,result);
     }
 
     @Test
-    void multiply() {
+    void shouldToMultiplyTwoNumbers() {
+        // given
+        int number= 4;
+
+        // when
+        int result = Calculator.subtract(2,2);
+        Assertions.assertEquals(4, result);
+
+        // then
+        Assertions.assertEquals(4, result);
     }
 
     @Test
-    void divide() {
+    void shouldToDivideTwoNumbers() {
+        // given
+        int number = 4;
+
+        // when
+        int result = Calculator.divide(8,2);
+        Assertions.assertEquals(4,result);
+
+        //then
+        Assertions.assertEquals(4,result);
+
     }
 }
