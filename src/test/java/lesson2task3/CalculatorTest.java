@@ -56,22 +56,7 @@ class CalculatorTest {
         //then
         Assertions.assertEquals(4,result);
 
-    }
+    }}
 
-    @Test
-    void sum() {
-    }
 
-    @Test
-    void subtract() {
-    }
-
-    @Test
-    void multiply() {
-    }
-
-    @Test
-    void divide() {
-    }
-}
 
