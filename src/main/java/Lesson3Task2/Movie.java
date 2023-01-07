@@ -1,15 +1,15 @@
 package Lesson3Task2;
 
 public class Movie {
-    private String title;
-    private String nameAndSurnameOfDirector;
-    private int duration;
-    private int yearOfProduction;
+    private final String title;
+    private final String nameAndSurnameOfDirector;
+    private final int durationOfMinutes;
+    private final int yearOfProduction;
 
-    public Movie(String title, String nameAndSurnameOfDirector, int duration, int yearOfProduction) {
+    public Movie(String title, String nameAndSurnameOfDirector, int durationOfMinutes, int yearOfProduction) {
         this.title = title;
         this.nameAndSurnameOfDirector = nameAndSurnameOfDirector;
-        this.duration = duration;
+        this.durationOfMinutes = durationOfMinutes;
         this.yearOfProduction = yearOfProduction;
     }
 }
