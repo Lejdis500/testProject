@@ -12,10 +12,10 @@ class CalculatorTest {
 
         // when
         int result = Calculator.sum(2, 2);
-        Assertions.assertEquals(4,int sum);
+        Assertions.assertEquals(4,result);
 
         // then
-        Assertions.assertEquals(4,int sum);
+        Assertions.assertEquals(4,result);
     }
 
     @Test
@@ -25,10 +25,10 @@ class CalculatorTest {
 
         // when
         int result = Calculator.subtract(2,1);
-        Assertions.assertEquals(1,int substract);
+        Assertions.assertEquals(1,result);
 
         // then
-        Assertions.assertEquals(1,int substract);
+        Assertions.assertEquals(1,result);
     }
 
     @Test
@@ -38,10 +38,10 @@ class CalculatorTest {
 
         // when
         int result = Calculator.subtract(2,2);
-        Assertions.assertEquals(4, int multiply);
+        Assertions.assertEquals(4,result);
 
         // then
-        Assertions.assertEquals(4, int multiply);
+        Assertions.assertEquals(4,result);
     }
 
     @Test
@@ -51,10 +51,10 @@ class CalculatorTest {
 
         // when
         int result = Calculator.divide(8,2);
-        Assertions.assertEquals(4,int divide);
+        Assertions.assertEquals(4,result);
 
         //then
-        Assertions.assertEquals(4,int divide);
+        Assertions.assertEquals(4,result);
 
     }}
 
