@@ -11,7 +11,7 @@ public class DayOfWeekTest {
         int day = 1;
 
         // when
-        String dayName = DayOfWeek.getDayName(day);
+        String dayName = Week.getDayName(day);
 
         // then
         Assert.assertEquals("Monday", dayName);
@@ -25,7 +25,7 @@ public class DayOfWeekTest {
         int day = 2;
 
         // when
-        String dayName = DayOfWeek.getDayName(day);
+        String dayName = Week.getDayName(day);
 
         // then
         Assert.assertEquals(Thuesday, dayName);
@@ -39,7 +39,7 @@ public class DayOfWeekTest {
         int day = 3;
 
         // when
-        String dayName = DayOfWeek.getDayName(day);
+        String dayName = Week.getDayName(day);
 
         // then
         Assert.assertEquals(Wednesday, dayName);
@@ -52,7 +52,7 @@ public class DayOfWeekTest {
         int day = 4;
 
         // when
-        String dayName = DayOfWeek.getDayName(day);
+        String dayName = Week.getDayName(day);
 
         // then
         Assert.assertEquals(Thursday, dayName);
@@ -65,7 +65,7 @@ public class DayOfWeekTest {
         int day = 5;
 
         // when
-        String dayName = DayOfWeek.getDayName(day);
+        String dayName = Week.getDayName(day);
 
         // then
         Assert.assertEquals(Friday, dayName);
@@ -78,7 +78,7 @@ public class DayOfWeekTest {
         int day = 6;
 
         // when
-        String dayName = DayOfWeek.getDayName(day);
+        String dayName = Week.getDayName(day);
 
         // then
         Assert.assertEquals(Weekend, dayName);
@@ -90,7 +90,7 @@ public class DayOfWeekTest {
         int day = 7;
 
         // when
-        String dayName = DayOfWeek.getDayName(day);
+        String dayName = Week.getDayName(day);
 
         // then
         Assert.assertEquals(Weekend, dayName);
@@ -104,7 +104,7 @@ public class DayOfWeekTest {
         int day = 11;
 
         // when
-        String dayName = DayOfWeek.getDayName(day);
+        String dayName = Week.getDayName(day);
 
         // then
         Assert.assertEquals(ThereIsNoSuchADay, dayName);
