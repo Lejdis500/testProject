@@ -4,46 +4,38 @@ import static org.junit.jupiter.api.Assertions.*;
 class calculatorTest {
 
     void shouldAddTwoNumber() {
-        // given
-        int number = 4;
+
         // when
         int result = Calculator.sum(2, 2);
-        Assertions.assertEquals(4, result);
         // then
-        Assertions.assertEquals(4, result);
+        Assertions.assertEquals(4, totalOfSum);
     }
 
     @Test
-    void shouldToSubtractTwoNumbers() {
-        // given
-        int number = 1;
+    void shouldSubtractTwoNumbers() {
+
         // when
         int result = Calculator.subtract(2,1);
-        Assertions.assertEquals(1,result);
         // then
-        Assertions.assertEquals(1,result);
+        Assertions.assertEquals(1,totalOfSubstract);
     }
 
     @Test
-    void shouldToMultiplyTwoNumbers() {
-        // given
-        int number= 4;
+    void shouldMultiplyTwoNumbers() {
+
         // when
         int result = Calculator.subtract(2,2);
-        Assertions.assertEquals(4, result);
         // then
-        Assertions.assertEquals(4, result);
+        Assertions.assertEquals(4,totalOfMultiply);
     }
 
     @Test
-    void shouldToDivideTwoNumbers() {
-        // given
-        int number = 4;
+    void shouldDivideTwoNumbers() {
+
         // when
         int result = Calculator.divide(8,2);
-        Assertions.assertEquals(4,result);
         //then
-        Assertions.assertEquals(4,result);
+        Assertions.assertEquals(4,totalOfDivide);
 
     }
 }
