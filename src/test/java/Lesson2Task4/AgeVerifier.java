@@ -3,13 +3,13 @@ package Lesson2Task4;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class AgeTest {
+class AgeVerifierTest {
     @Test
     public void shouldReturnTrueWhenAdult() {
         // given
         int age = 19;
         // when
-        boolean isAdult = Age.isAdult(age);
+        boolean isAdult = AgeVerifier.isAdult(age);
         //then
         Assertions.assertTrue(isAdult);
     }
@@ -19,7 +19,7 @@ class AgeTest {
         // given
         int age = 17;
         // when
-        boolean isAdult = Age.isAdult(age);
+        boolean isAdult = AgeVerifier.isAdult(age);
         // then
         Assertions.assertFalse(isAdult);
     }
@@ -28,7 +28,7 @@ class AgeTest {
         // given
         int age = 18;
         // when
-        boolean isAdult = Age.isAdult(age);
+        boolean isAdult = AgeVerifier.isAdult(age);
         // then
         Assertions.assertTrue(isAdult);
 
