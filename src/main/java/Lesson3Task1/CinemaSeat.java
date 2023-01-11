@@ -5,12 +5,14 @@ public class CinemaSeat {
     private final int rowNumber;
     private boolean isFree;
 
-    public CinemaSeat(int number, int rowNumber, boolean isFree) {
-        this.isFree = isFree;
+    public CinemaSeat(int number, int rowNumber) {
+        this.isFree = true;
         this.number = number;
         this.rowNumber = rowNumber;
     }
 
-
+    public void setFree(boolean free) {
+        isFree = free;
+    }
 }
 
