@@ -5,12 +5,3 @@ public class AgeVerifier {
         return age >= 18;
     }
 }
-
-
-
-
-
-
-
-
-
