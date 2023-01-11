@@ -1,7 +1,7 @@
 package Lesson2Task6;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class DayOfWeekTest {
 
@@ -11,104 +11,93 @@ public class DayOfWeekTest {
         int day = 1;
 
         // when
-        String dayName = Week.getDayName(day);
+        String dayName = DayOfWeek.getDayName(day);
 
         // then
-        Assert.assertEquals("Monday", dayName);
+        Assertions.assertEquals("Monday", dayName);
     }
 
     @Test
-
     public void shouldGetThuesday() {
-
         // given
         int day = 2;
 
         // when
-        String dayName = Week.getDayName(day);
+        String dayName = DayOfWeek.getDayName(day);
 
         // then
-        Assert.assertEquals(Thuesday, dayName);
+        Assertions.assertEquals("Thuesday", dayName);
     }
 
     @Test
-
     public void shouldGetWednesday() {
-
         // given
         int day = 3;
 
         // when
-        String dayName = Week.getDayName(day);
+        String dayName = DayOfWeek.getDayName(day);
 
         // then
-        Assert.assertEquals(Wednesday, dayName);
+        Assertions.assertEquals("Wednesday", dayName);
     }
 
     @Test
     public void shouldGetThursday() {
-
         // given
         int day = 4;
 
         // when
-        String dayName = Week.getDayName(day);
+        String dayName = DayOfWeek.getDayName(day);
 
         // then
-        Assert.assertEquals(Thursday, dayName);
+        Assertions.assertEquals("Thursday", dayName);
     }
 
     @Test
     public void shouldGetFriday() {
-
         // given
         int day = 5;
 
         // when
-        String dayName = Week.getDayName(day);
+        String dayName = DayOfWeek.getDayName(day);
 
         // then
-        Assert.assertEquals(Friday, dayName);
+        Assertions.assertEquals("Friday", dayName);
     }
 
     @Test
-    public void shouldGetWeekend() {
-
+    public void shouldGetWeekendForSaturday() {
         // given
         int day = 6;
 
         // when
-        String dayName = Week.getDayName(day);
+        String dayName = DayOfWeek.getDayName(day);
 
         // then
-        Assert.assertEquals(Weekend, dayName);
+        Assertions.assertEquals("Weekend", dayName);
     }
 
     @Test
-    public void shouldGetWeekend() {
+    public void shouldGetWeekendForSunday() {
         // given
         int day = 7;
 
         // when
-        String dayName = Week.getDayName(day);
+        String dayName = DayOfWeek.getDayName(day);
 
         // then
-        Assert.assertEquals(Weekend, dayName);
+        Assertions.assertEquals("Weekend", dayName);
     }
-
 
     @Test
     public void shouldGetThereIsNoSuchADay() {
-
         // given
         int day = 11;
 
         // when
-        String dayName = Week.getDayName(day);
+        String dayName = DayOfWeek.getDayName(day);
 
         // then
-        Assert.assertEquals(ThereIsNoSuchADay, dayName);
-
-
+        Assertions.assertEquals("There is no such a day!", dayName);
     }
 }

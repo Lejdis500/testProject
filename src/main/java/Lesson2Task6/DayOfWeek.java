@@ -2,7 +2,6 @@ package Lesson2Task6;
 
 public class DayOfWeek {
 
-
     public static String getDayName(int day) {
         if (day == 1) {
             return "Monday";
@@ -20,6 +19,4 @@ public class DayOfWeek {
             return "There is no such a day!";
         }
     }
-
 }
-
