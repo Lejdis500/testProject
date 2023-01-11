@@ -4,8 +4,4 @@ public interface Geometry {
     int getArea();
 
     int getPerimeter();
-
 }
-
-
-
