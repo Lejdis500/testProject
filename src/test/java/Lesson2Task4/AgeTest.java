@@ -1,6 +1,7 @@
 package Lesson2Task4;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 class AgeTest {
     @Test
@@ -8,27 +9,26 @@ class AgeTest {
         // given
         int age = 19;
         // when
-        boolean result = Age.isAdult(age);
+        boolean isAdult = Age.isAdult(age);
         //then
         Assertions.assertTrue(isAdult);
     }
 
     @Test
-    public void shoudReturnFalseWhenImmature() {
+    public void shouldReturnFalseWhenImmature() {
         // given
         int age = 17;
         // when
-        boolean result = Age.isImmature(age);
+        boolean isAdult = Age.isAdult(age);
         // then
-        Assertions.assertFalse(isImmature);
+        Assertions.assertFalse(isAdult);
     }
 
-    public void shoudReturnTrueWhenAdult() {
+    public void shouldReturnTrueWhenYoungAdult() {
         // given
         int age = 18;
-        boolean result = Age.isAdult(age);
         // when
-        boolean result = Age.isAdult(age);
+        boolean isAdult = Age.isAdult(age);
         // then
         Assertions.assertTrue(isAdult);
 
