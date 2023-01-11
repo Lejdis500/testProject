@@ -7,50 +7,40 @@ class CalculatorTest {
 
     @Test
     void shouldAddTwoNumber() {
-
-
         // when
-        int result = Calculator.sum(2, 2);
+        int totalOfSum = Calculator.sum(2, 2);
 
         // then
-        Assertions.assertEquals(4,totalOfSum);
+        Assertions.assertEquals(4, totalOfSum);
     }
 
     @Test
     void shouldSubtractTwoNumbers() {
-
-
         // when
-        int result = Calculator.subtract(2,1);
+        int totalOfSubstract = Calculator.subtract(2, 1);
 
         // then
-        Assertions.assertEquals(1,totalOfSubstract);
+        Assertions.assertEquals(1, totalOfSubstract);
     }
 
     @Test
     void shouldMultiplyTwoNumbers() {
-
-
         // when
-        int result = Calculator.multiply(2,2);
+        int totalOfMultiply = Calculator.multiply(2, 2);
 
         // then
-        Assertions.assertEquals(4,totalOfMultiply);
+        Assertions.assertEquals(4, totalOfMultiply);
     }
 
     @Test
     void shouldDivideTwoNumbers() {
-
-
         // when
-        int result = Calculator.divide(8,2);
+        int totalOfDivide = Calculator.divide(8, 2);
 
         //then
-        Assertions.assertEquals(4,totalOfDivide);
+        Assertions.assertEquals(4, totalOfDivide);
 
     }
-
-
 }
 
 
