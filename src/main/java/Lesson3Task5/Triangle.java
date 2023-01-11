@@ -1,7 +1,7 @@
 package Lesson3Task5;
 
 public class Triangle {
-    public static boolean checkIfTriangleIsRectangular(int a, int b, int c) {
-        return a * a + b * b == c * c;
+    public static boolean isRectangular(int sideA, int sideB, int hypotenuse) {
+        return sideA * sideA + sideB * sideB == hypotenuse * hypotenuse;
     }
 }
